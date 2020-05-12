@@ -1,0 +1,1233 @@
+2020-05-11 09:27:39,210 ERROR 19856 [-/::1/-/6ms GET /v1/home/bannerList?openid=null] nodejs.TypeError: Cannot set property 'data' of undefined
+    at UserController.find (D:\egg-example\app\controller\index.js:9:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 19856
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 09:27:48,703 ERROR 19856 [-/127.0.0.1/-/3ms GET /v1/home/bannerList] nodejs.TypeError: Cannot set property 'data' of undefined
+    at UserController.find (D:\egg-example\app\controller\index.js:9:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 19856
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 09:37:40,575 ERROR 15816 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15816
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 10:30:16,403 ERROR 15816 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15816
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 10:35:18,908 ERROR 14364 [-/::1/-/5ms GET /v1/home/hotList?page=1] nodejs.ReferenceError: count is not defined
+    at IndexService.findHotList (D:\egg-example\app\service\index.js:11:24)
+    at IndexController.getHotList (D:\egg-example\app\controller\index.js:19:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 14364
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 10:48:42,662 ERROR 12496 [-/127.0.0.1/-/2ms GET /v1/user/addCity] nodejs.ReferenceError: userName is not defined
+    at UserController.addCity (D:\egg-example\app\controller\user.js:18:56)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+
+pid: 12496
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 11:02:30,045 ERROR 22488 [-/::1/-/18ms POST /v1/user/addCity] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'test.cat' doesn't exist
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'test.cat' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "INSERT INTO `cat`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)"
+name: "ER_NO_SUCH_TABLEError"
+pid: 22488
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 11:03:03,903 ERROR 25828 [-/::1/-/32ms POST /v1/user/addCity] nodejs.ER_BAD_NULL_ERRORError: ER_BAD_NULL_ERROR: Column 'city' cannot be null
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'city' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)"
+name: "ER_BAD_NULL_ERRORError"
+pid: 25828
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 11:03:31,111 ERROR 9880 [-/::1/-/19ms POST /v1/user/addCity] nodejs.ER_BAD_NULL_ERRORError: ER_BAD_NULL_ERROR: Column 'city' cannot be null
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'city' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)"
+name: "ER_BAD_NULL_ERRORError"
+pid: 9880
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 11:03:58,327 ERROR 18908 [-/::1/-/20ms POST /v1/user/addCity] nodejs.ER_BAD_NULL_ERRORError: ER_BAD_NULL_ERROR: Column 'city' cannot be null
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'city' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'qwe', '15522025191', 'asdfasdfsadf', NULL)"
+name: "ER_BAD_NULL_ERRORError"
+pid: 18908
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 11:06:56,351 ERROR 18908 [-/::1/-/8ms POST /v1/user/addCity] nodejs.ER_BAD_NULL_ERRORError: ER_BAD_NULL_ERROR: Column 'city' cannot be null
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'songyang', '15522025191', 'asdfasdf', NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'city' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `addressList`(`id`, `name`, `mobile`, `detailed`, `city`) VALUES(NULL, 'songyang', '15522025191', 'asdfasdf', NULL)"
+name: "ER_BAD_NULL_ERRORError"
+pid: 18908
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 13:49:00,824 ERROR 4620 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 4620
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 13:56:07,435 ERROR 13520 [-/::1/-/8ms PUT /v1/user/updateCity] nodejs.Error: Can not auto detect update condition, please set options.where, or make sure obj.id exists
+    at RDSClient.proto.update (D:\egg-example\node_modules\ali-rds\lib\operator.js:151:13)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as update] (D:\egg-example\node_modules\co\index.js:30:15)
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:33:41)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+
+pid: 13520
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 13:57:22,709 ERROR 1344 [-/::1/-/25ms PUT /v1/user/updateCity] nodejs.ReferenceError: id is not defined
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:36:13)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 1344
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 13:58:58,848 ERROR 1344 [-/::1/-/7ms PUT /v1/user/updateCity] nodejs.ReferenceError: id is not defined
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:36:13)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 1344
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 13:59:47,459 ERROR 1344 [-/::1/-/2ms PUT /v1/user/updateCity] nodejs.ReferenceError: id is not defined
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:36:13)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 1344
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:00:50,668 ERROR 1344 [-/::1/-/3ms PUT /v1/user/updateCity] nodejs.ReferenceError: id is not defined
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:36:13)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 1344
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:01:11,848 ERROR 1344 [-/::1/-/2ms PUT /v1/user/updateCity] nodejs.ReferenceError: id is not defined
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:36:13)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 1344
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:02:35,932 ERROR 1344 [-/::1/-/2ms PUT /v1/user/updateCity] nodejs.ReferenceError: id is not defined
+    at UserService.updateCityDetail (D:\egg-example\app\service\user.js:36:13)
+    at UserController.updateCity (D:\egg-example\app\controller\user.js:38:47)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 1344
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:20:28,927 ERROR 16748 [-/::1/-/4ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 16748
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:21:43,118 ERROR 16748 [-/::1/-/2ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 16748
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:21:52,850 ERROR 6824 [-/::1/-/15ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 6824
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:22:18,198 ERROR 6824 [-/::1/-/5ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 6824
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:25:13,856 ERROR 14496 [-/::1/-/16ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 14496
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:25:57,139 ERROR 23840 [-/::1/-/22ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 23840
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:26:09,613 ERROR 4820 [-/::1/-/16ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 4820
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:27:40,703 ERROR 18880 [-/::1/-/15ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 18880
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:29:01,614 ERROR 5460 [-/::1/-/14ms PUT /v1/user/addDefaultCity] nodejs.ReferenceError: id is not defined
+    at UserService.addDefaultCity (D:\egg-example\app\service\user.js:40:13)
+    at UserController.addDefaultCity (D:\egg-example\app\controller\user.js:47:28)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 5460
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:33:11,182 ERROR 19956 [-/::1/-/25ms PUT /v1/user/addDefaultCity] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '3' for key 'PRIMARY'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `defaultCity`(`id`) VALUES(3)
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '3' for key 'PRIMARY'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `defaultCity`(`id`) VALUES(3)"
+name: "ER_DUP_ENTRYError"
+pid: 19956
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:33:30,027 ERROR 4852 [-/::1/-/34ms PUT /v1/user/addDefaultCity] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '3' for key 'PRIMARY'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `defaultCity`(`id`) VALUES(3)
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '3' for key 'PRIMARY'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `defaultCity`(`id`) VALUES(3)"
+name: "ER_DUP_ENTRYError"
+pid: 4852
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:34:14,583 ERROR 23628 [-/::1/-/20ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 23628
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:35:20,574 ERROR 22396 [-/::1/-/18ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 22396
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:35:48,883 ERROR 14516 [-/::1/-/17ms PUT /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 2' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 2"
+name: "ER_PARSE_ERRORError"
+pid: 14516
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:36:36,070 ERROR 6232 [-/::1/-/17ms POST /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 6232
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:38:52,375 ERROR 12664 [-/::1/-/20ms POST /v1/user/addDefaultCity] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: UPDATE `defaultCity` SET  WHERE `id` = 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE `defaultCity` SET  WHERE `id` = 3"
+name: "ER_PARSE_ERRORError"
+pid: 12664
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:39:50,479 ERROR 10080 [-/::1/-/19ms POST /v1/user/addDefaultCity] nodejs.Error: Can not auto detect update condition, please set options.where, or make sure obj.id exists
+    at RDSClient.proto.update (D:\egg-example\node_modules\ali-rds\lib\operator.js:151:13)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as update] (D:\egg-example\node_modules\co\index.js:30:15)
+    at UserService.addDefaultCity (D:\egg-example\app\service\user.js:41:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 10080
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:46:10,327 ERROR 25268 [-/::1/-/20ms POST /v1/user/addDefaultCity] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `defaultCity`(`defaultCityId`) VALUES(3)
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'id' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `defaultCity`(`defaultCityId`) VALUES(3)"
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 25268
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:47:19,501 ERROR 25812 [-/::1/-/23ms POST /v1/user/addDefaultCity] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'i' in 'field list'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `defaultCity`(`i`, `defaultCityId`) VALUES(NULL, 3)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'i' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `defaultCity`(`i`, `defaultCityId`) VALUES(NULL, 3)"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 25812
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 14:47:51,704 ERROR 19888 [-/::1/-/5ms POST /v1/user/addDefaultCity] nodejs.Error: Can not auto detect update condition, please set options.where, or make sure obj.id exists
+    at RDSClient.proto.update (D:\egg-example\node_modules\ali-rds\lib\operator.js:151:13)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as update] (D:\egg-example\node_modules\co\index.js:30:15)
+    at UserService.addDefaultCity (D:\egg-example\app\service\user.js:41:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 19888
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:14:54,586 ERROR 4620 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 4620
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:18:21,349 ERROR 20340 [-/127.0.0.1/-/7ms GET /v1/order/cartList] nodejs.TypeError: ctx.service.user.getCartList is not a function
+    at OrderController.cartList (D:\egg-example\app\controller\order.js:8:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+
+pid: 20340
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:31:29,984 ERROR 4664 [-/::1/-/15ms POST /v1/order/editCart] nodejs.TypeError: this.app.mysql.truncate is not a function
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:10:26)
+    at OrderController.editCart (D:\egg-example\app\controller\order.js:18:46)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 4664
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:37:58,103 ERROR 8248 [-/::1/-/81ms POST /v1/order/editCart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'list' in 'field list'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cartList`(`list`) VALUES(('[object Object]'))
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'list' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cartList`(`list`) VALUES(('[object Object]'))"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 8248
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:39:08,992 ERROR 8248 [-/::1/-/29ms POST /v1/order/editCart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'list' in 'field list'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cartList`(`list`) VALUES(('[object Object]'))
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'list' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cartList`(`list`) VALUES(('[object Object]'))"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 8248
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:39:26,322 ERROR 11920 [-/::1/-/40ms POST /v1/order/editCart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'select' in 'field list'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cartList`(`img_url`, `num`, `price`, `spec`, `title`, `id`, `select`) VALUES('../../images/product_bg.jpg', 1, 78, '2磅188元/138元/4磅298元（深圳）', '猪猪侠草莓蛋糕-4磅', 3, false)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'select' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cartList`(`img_url`, `num`, `price`, `spec`, `title`, `id`, `select`) VALUES('../../images/product_bg.jpg', 1, 78, '2磅188元/138元/4磅298元（深圳）', '猪猪侠草莓蛋糕-4磅', 3, false)"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 11920
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:40:08,627 ERROR 22260 [-/::1/-/46ms POST /v1/order/editCart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'select' in 'field list'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cartList`(`img_url`, `num`, `price`, `spec`, `title`, `id`, `select`) VALUES('../../images/product_bg.jpg', 1, 78, '2磅188元/138元/4磅298元（深圳）', '猪猪侠草莓蛋糕-4磅', 3, false)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'select' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cartList`(`img_url`, `num`, `price`, `spec`, `title`, `id`, `select`) VALUES('../../images/product_bg.jpg', 1, 78, '2磅188元/138元/4磅298元（深圳）', '猪猪侠草莓蛋糕-4磅', 3, false)"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 22260
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:40:55,332 ERROR 10036 [-/::1/-/48ms POST /v1/order/editCart] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (D:\egg-example\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (D:\egg-example\node_modules\co\index.js:30:15)
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:12:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 10036
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:50:16,985 ERROR 21756 [-/::1/-/40ms POST /v1/order/editCart] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (D:\egg-example\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (D:\egg-example\node_modules\co\index.js:30:15)
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:12:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21756
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:51:19,644 ERROR 17388 [-/::1/-/42ms POST /v1/order/editCart] nodejs.ReferenceError: result is not defined
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:19:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 17388
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:51:22,961 ERROR 17388 [-/::1/-/36ms POST /v1/order/editCart] nodejs.ReferenceError: result is not defined
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:19:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 17388
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:52:52,164 ERROR 3888 [-/::1/-/43ms POST /v1/order/editCart] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (D:\egg-example\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (D:\egg-example\node_modules\co\index.js:30:15)
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:12:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3888
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 16:54:30,810 ERROR 22964 [-/::1/-/47ms POST /v1/order/editCart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'select' in 'field list'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cartList`(`img_url`, `num`, `price`, `spec`, `title`, `id`, `select`) VALUES('../../images/product_bg.jpg', 1, 198, '6磅', '猪猪侠草莓蛋糕', 1, false)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'select' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cartList`(`img_url`, `num`, `price`, `spec`, `title`, `id`, `select`) VALUES('../../images/product_bg.jpg', 1, 198, '6磅', '猪猪侠草莓蛋糕', 1, false)"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 22964
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-11 17:00:55,184 ERROR 15412 [-/::1/-/38ms POST /v1/order/editCart] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (D:\egg-example\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (D:\egg-example\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (D:\egg-example\node_modules\co\index.js:30:15)
+    at OrderService.getEditCart (D:\egg-example\app\service\order.js:12:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15412
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-12 08:21:23,737 ERROR 4620 nodejs.ClusterClientNoResponseError: client no response in 54743088ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (D:\egg-example\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4620
+hostname: LAPTOP-BGLV8EJH
+

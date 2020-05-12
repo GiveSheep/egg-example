@@ -1,0 +1,21 @@
+2020-05-12 09:45:24,579 ERROR 20452 [-/::1/-/3ms POST /v1/order/addCart] nodejs.ReferenceError: i is not defined
+    at OrderService.getAddCart (D:\egg-example\app\service\order.js:29:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20452
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-12 09:46:54,984 ERROR 22708 [-/::1/-/25ms POST /v1/order/addCart] nodejs.ReferenceError: i is not defined
+    at OrderService.getAddCart (D:\egg-example\app\service\order.js:30:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 22708
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-12 09:47:03,204 ERROR 16652 [-/::1/-/19ms POST /v1/order/addCart] nodejs.ReferenceError: i is not defined
+    at OrderService.getAddCart (D:\egg-example\app\service\order.js:30:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 16652
+hostname: LAPTOP-BGLV8EJH
+

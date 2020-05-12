@@ -1,0 +1,690 @@
+2020-05-06 14:07:54,150 ERROR 7916 [-/127.0.0.1/-/2ms GET /user/12] nodejs.TypeError: Cannot read property 'query' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:36)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 7916
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:09:05,352 ERROR 7916 [-/127.0.0.1/-/1ms GET /user/1234] nodejs.TypeError: Cannot read property 'query' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:36)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 7916
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:17:03,289 ERROR 18884 [-/127.0.0.1/-/9ms GET /user/1234] nodejs.TypeError: Cannot read property 'query' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:36)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 18884
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:18:15,367 ERROR 14480 [-/127.0.0.1/-/6ms GET /user/1234] nodejs.TypeError: Cannot read property 'query' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:36)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 14480
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:20:23,517 ERROR 14480 [-/127.0.0.1/-/2ms GET /user/1234] nodejs.TypeError: Cannot read property 'query' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:36)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 14480
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:22:06,050 ERROR 18148 [-/127.0.0.1/-/6ms GET /user/1234] nodejs.ReferenceError: ctx is not defined
+    at UserController.init (D:\egg-example\app\controller\user.js:7:17)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 18148
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:40:10,517 ERROR 5520 [-/127.0.0.1/-/25ms GET /user/1234] nodejs.TypeError: Cannot read property 'Student' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:6:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 5520
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:40:22,984 ERROR 15204 [-/127.0.0.1/-/6ms GET /user/1234] nodejs.TypeError: Cannot read property 'User' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 15204
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:40:33,643 ERROR 7824 [-/127.0.0.1/-/10ms GET /user/1234] nodejs.TypeError: Cannot read property 'user' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 7824
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:40:34,685 ERROR 7824 [-/127.0.0.1/-/0ms GET /user/1234] nodejs.TypeError: Cannot read property 'user' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 7824
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 14:47:34,452 ERROR 15240 [-/127.0.0.1/-/6ms GET /user/1234] nodejs.TypeError: Cannot read property 'test' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at D:\egg-example\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\egg-example\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\egg-example\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 15240
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:28:34,767 ERROR 20500 [-/127.0.0.1/-/6ms GET /user/1234] nodejs.TypeError: Cannot read property 'query' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:5:32)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 20500
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:37:29,257 ERROR 16256 [-/127.0.0.1/-/10ms GET /user/1234] nodejs.ReferenceError: app is not defined
+    at UserService.find (D:\egg-example\app\service\user.js:5:17)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 16256
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:38:56,803 ERROR 15968 [-/127.0.0.1/-/8ms GET /user/1234] nodejs.TypeError: Cannot read property 'get' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:6:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 15968
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:39:51,064 ERROR 21440 [-/127.0.0.1/-/11ms GET /user/1234] nodejs.TypeError: Cannot read property 'get' of undefined
+    at UserService.find (D:\egg-example\app\service\user.js:6:39)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 21440
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:42:28,537 ERROR 15148 [-/127.0.0.1/-/9ms GET /user/1234] nodejs.ReferenceError: app is not defined
+    at UserService.find (D:\egg-example\app\service\user.js:5:17)
+    at UserController.init (D:\egg-example\app\controller\user.js:9:45)
+    at Object.callFn (D:\egg-example\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\egg-example\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\egg-example\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\egg-example\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+    at next (D:\egg-example\node_modules\koa-compose\index.js:45:18)
+    at D:\egg-example\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\egg-example\node_modules\koa-compose\index.js:44:32)
+
+pid: 15148
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:46:18,950 ERROR 10052 [-/127.0.0.1/-/26ms GET /user/1234] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'where clause'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: SELECT * FROM `user` WHERE `id` = '1234' LIMIT 0, 1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'id' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT * FROM `user` WHERE `id` = '1234' LIMIT 0, 1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 10052
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:48:25,797 ERROR 11308 [-/127.0.0.1/-/22ms GET /user/1234] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'where clause'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: SELECT * FROM `user` WHERE `id` = 1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'id' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT * FROM `user` WHERE `id` = 1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 11308
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 15:48:32,927 ERROR 11308 [-/127.0.0.1/-/13ms GET /user/1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'where clause'
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: SELECT * FROM `user` WHERE `id` = 1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'id' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT * FROM `user` WHERE `id` = 1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 11308
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:33:32,763 ERROR 17376 [-/127.0.0.1/-/17ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE5\xBC\xA0\xE4\xB8\x89' for column 'name' at row 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`name`) VALUES('张三')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE5\\xBC\\xA0\\xE4\\xB8\\x89' for column 'name' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cat`(`name`) VALUES('张三')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 17376
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:37:21,740 ERROR 12188 [-/127.0.0.1/-/14ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'id' at row 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`id`, `name`) VALUES('', '张三')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '' for column 'id' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cat`(`id`, `name`) VALUES('', '张三')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 12188
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:37:38,066 ERROR 4208 [-/127.0.0.1/-/18ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE5\xBC\xA0\xE4\xB8\x89' for column 'name' at row 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE5\\xBC\\xA0\\xE4\\xB8\\x89' for column 'name' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 4208
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:38:51,774 ERROR 3340 [-/127.0.0.1/-/12ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE5\xBC\xA0\xE4\xB8\x89' for column 'name' at row 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE5\\xBC\\xA0\\xE4\\xB8\\x89' for column 'name' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 3340
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:40:43,246 ERROR 20144 [-/127.0.0.1/-/15ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE5\xBC\xA0\xE4\xB8\x89' for column 'name' at row 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE5\\xBC\\xA0\\xE4\\xB8\\x89' for column 'name' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 20144
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:46:08,111 ERROR 3428 [-/127.0.0.1/-/12ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'utf8mb4' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: set name utf8mb4
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'utf8mb4' at line 1"
+sqlState: "42000"
+index: 0
+sql: "set name utf8mb4"
+name: "ER_PARSE_ERRORError"
+pid: 3428
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:46:18,243 ERROR 19816 [-/127.0.0.1/-/13ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'utf8' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: set name utf8
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'utf8' at line 1"
+sqlState: "42000"
+index: 0
+sql: "set name utf8"
+name: "ER_PARSE_ERRORError"
+pid: 19816
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:46:19,449 ERROR 19816 [-/127.0.0.1/-/4ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'utf8' at line 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: set name utf8
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'utf8' at line 1"
+sqlState: "42000"
+index: 0
+sql: "set name utf8"
+name: "ER_PARSE_ERRORError"
+pid: 19816
+hostname: LAPTOP-BGLV8EJH
+
+2020-05-06 16:47:31,174 ERROR 16268 [-/127.0.0.1/-/46ms GET /insertUser/%E5%BC%A0%E4%B8%89] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE5\xBC\xA0\xE4\xB8\x89' for column 'name' at row 1
+    at Query.Sequence._packetToError (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\egg-example\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\egg-example\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\egg-example\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\egg-example\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Pool.query (D:\egg-example\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\egg-example\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\egg-example\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\egg-example\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\egg-example\node_modules\co\index.js:65:19)
+    at D:\egg-example\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE5\\xBC\\xA0\\xE4\\xB8\\x89' for column 'name' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cat`(`id`, `name`) VALUES(NULL, '张三')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 16268
+hostname: LAPTOP-BGLV8EJH
+
